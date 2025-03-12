@@ -23,4 +23,6 @@ def test_divide():
 @pytest.mark.easy_operation
 def test_add_student_id():
     # New test case using the last two digits of the student ID as the expected output
-    assert add(42, 42) == 84  # Replace 42, 42 with appropriate values if needed
+    result = add(42, 42)
+    print(f"Result of add(42, 42): {result}")
+    assert result == 84
